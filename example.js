@@ -1,7 +1,7 @@
 const fs = require("fs");
 let data = "";
 try {
-  data = fs.readFileSync("input.text", "utf8");
+  data = fs.readFileSync("input2.text", "utf8");
   //console.log(data)
 } catch (err) {
   console.error(err);
@@ -52,7 +52,7 @@ function getMostRepeatedElements(wordArr) {
   if (n > 1) {
     return tops.slice(-n).reverse();
   } else if ((n = 1)) {
-    return "ALL CLEAR";
+    return ["ALL CLEAR"];
   }
 }
 getMostRepeatedElements(wordArr).forEach(val =>{
